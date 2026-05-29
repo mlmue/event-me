@@ -25,8 +25,8 @@ const loadEventsData = async (): Promise<Event[]> =>   {
   try {
     const response = await fetch(`${API_URL}/events`);
     return response.json();
-  } catch (e) {
-    console.error(e);
+  } catch (error) {
+    console.error(error);
     return [];
   }
 }
